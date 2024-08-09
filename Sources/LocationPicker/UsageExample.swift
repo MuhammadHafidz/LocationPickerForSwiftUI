@@ -28,7 +28,7 @@ struct UsageExample: View {
             .navigationTitle("LocationPicker")
             
             .sheet(isPresented: $showSheet) {
-                LocationPicker(instructions: "Tap to select coordinates", coordinates: $coordinates, dismissOnSelection: true)
+                LocationPicker(instructions: "Tap to select coordinates", initCoordinates: coordinates, dismissOnSelection: true)
             }
             
         }
